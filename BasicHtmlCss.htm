@@ -52,22 +52,12 @@
             <p>
               HTML is the standard markup language for creating Web pages.
               <ul>
-                <li>
-                  HTML stands for Hyper Text Markup Language
-                </li>
-                <li>
-                  HTML describes the structure of Web pages using markup
-                </li>
-                <li>
-                  HTML elements are the building blocks of HTML pages
-                </li>
-                <li>
-                  HTML elements are represented by tags
-                </li>
-                <li>
-                  HTML tags label pieces of content such as "heading", "paragraph", "table", and so on
-                  Browsers do not display the HTML tags, but use them to render the content of the page
-                </li>
+                <li>HTML stands for Hyper Text Markup Language</li>
+                <li>HTML describes the structure of Web pages using markup</li>
+                <li>HTML elements are the building blocks of HTML pages</li>
+                <li>HTML elements are represented by tags</li>
+                <li>HTML tags label pieces of content such as "heading", "paragraph", "table", and so on</li>
+                <li>Browsers do not display the HTML tags, but use them to render the content of the page</li>
               </ul>
             </p>
           </li>
@@ -87,13 +77,71 @@
       <button class="collapsible">2. Tags</button>
       <div class="content">
         <ul>
-          <li>Why?</li>
-          <li>Open and Close</li>
-          <li>Structure</li>
-          <li>Headings</li>
-          <li>Paragraphs</li>
-          <li>Div</li>
-          <li>Lists</li>
+          <li>
+            <h3>Why do we use tags?</h3>
+            <p>Tags are how the computer knows how to we want it to format and
+              structure the information displayed on the webpage.</p>
+          </li>
+          <li>
+            <h3>Open and Close</h3>
+            <ul>
+              <li>(Almost) every HTML element has an opening (&lt;element&gt;) and a
+                closing (&lt;/element&gt;) tag that surrounds the information
+                affected by that element</li>
+              <li>Elements can be nested inside each other
+                (&lt;a&gt;&lt;b&gt;Something&lt;/b&gt;&lt;/a&gt;)</li>
+              <li>When it finds an opening tag, the computer applies that element
+                to everything that follows until it reaches a matching closing tag</li>
+              <li>Many errors in how a webpage displays can be traced back to a
+                missing or misplaced opening or (most often) closing tag</li>
+              <li>[Picture to go here]</li>
+              <li>For this reason, using a style guide and keeping your code formatted
+                as you are writing can save you a ton of time spent debugging later</li>
+              <li>[Link(s) to style guide(s)]</li>
+            </ul>
+          </li>
+          <li>
+            <h3>Structure Elements</h3>
+            <ul>
+              <li>
+                <h4>Headings</h4>
+                <ul>
+                  <li>Headings come in 6 sizes: &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;,
+                    &lt;h4&gt;, &lt;h5&gt;, and &lt;h6&gt;</li>
+                  <li>These are useful for titles and beginnings of sections</li>
+                  <li>Larger headings can be used for larger sections</li>
+                  <li>Smaller headings can be used for smaller sections or subsections</li>
+                  <li>Samples:</li>
+                  <ul>
+                    <li><h1>Heading 1!</h1></li>
+                    <li><h2>Heading 2!</h2></li>
+                    <li><h3>Heading 3!</h3></li>
+                    <li><h4>Heading 4!</h4></li>
+                    <li><h5>Heading 5!</h5></li>
+                    <li><h6>Heading 6!</h6></li>
+                  </ul>
+                </ul>
+              </li>
+              <li>
+                <h4>Paragraphs</h4>
+                <ul>
+                  <li>Paragraphs are basic blobs of text</li>
+                  <li>These can be used to chunk related information into groups</li>
+                  <li>The computer automatically adds white space (margin) around
+                    a paragraph element</li>
+                  <li>The computer ignores newlines (return/enter) and extra spaces
+                    inside a paragraph element</li>
+                  <li>[Picture of that goes here]</li>
+                </ul>
+              </li>
+              <li>
+                <h4>Div</h4>
+              </li>
+              <li>
+                <h4>Lists</h4>
+              </li>
+            </ul>
+          </li>
           <li>Simple text formats</li>
           <li>Tables</li>
         </ul>
@@ -153,58 +201,68 @@
 
 
   <section id="css">
-    <h2>CSS Basics</h2>
-    <button class="collapsible">1. Basics</button>
-    <div class="content">
-      <ul>
-        <li>What is it?</li>
-        <li>Why use it?</li>
-        <li>Readability</li>
-      </ul>
+    <h2 class="align">CSS Basics</h2>
+    <div class="align">
+      <button class="collapsible">1. Basics</button>
+      <div class="content">
+        <ul>
+          <li>What is it?</li>
+          <li>Why use it?</li>
+          <li>Readability</li>
+        </ul>
+      </div>
     </div>
 
-    <button class="collapsible">2. Selectors</button>
-    <div class="content">
-      <ul>
-        <li>Why?</li>
-        <li>Syntax</li>
-        <li>Select by Element</li>
-        <li>Select by ID</li>
-        <li>Select by Class</li>
-        <li>Grouping Selectors</li>
-      </ul>
+    <div class="align">
+      <button class="collapsible">2. Selectors</button>
+      <div class="content">
+        <ul>
+          <li>Why?</li>
+          <li>Syntax</li>
+          <li>Select by Element</li>
+          <li>Select by ID</li>
+          <li>Select by Class</li>
+          <li>Grouping Selectors</li>
+        </ul>
+      </div>
     </div>
 
-    <button class="collapsible">3. Cascade</button>
-    <div class="content">
-      <ul>
-        <li>Why?</li>
-        <li>Inline Style Sheet</li>
-        <li>Internal Style Sheet</li>
-        <li>External Style Sheet</li>
-        <li>Order</li>
-      </ul>
+    <div class="align">
+      <button class="collapsible">3. Cascade</button>
+      <div class="content">
+        <ul>
+          <li>Why?</li>
+          <li>Inline Style Sheet</li>
+          <li>Internal Style Sheet</li>
+          <li>External Style Sheet</li>
+          <li>Order</li>
+        </ul>
+      </div>
     </div>
 
-    <button class="collapsible">4. Layout</button>
-    <div class="content">
-      <ul>
-        <li>Why?</li>
-        <li>Text</li>
-        <li>Lists</li>
-        <li>Tables</li>
-        <li>Colors</li>
-        <li>Display</li>
-        <li>Position</li>
-      </ul>
+    <div class="align">
+      <button class="collapsible">4. Layout</button>
+      <div class="content">
+        <ul>
+          <li>Why?</li>
+          <li>Text</li>
+          <li>Lists</li>
+          <li>Tables</li>
+          <li>Colors</li>
+          <li>Display</li>
+          <li>Position</li>
+        </ul>
+      </div>
     </div>
 
-    <button class="collapsible">5. Connecting CSS and HTML</button>
-    <div class="content">
-      <ul>
-        <li>Why?</li>
-        <li>How?</li>
-      </ul>
+    <div class="align">
+      <button class="collapsible">5. Connecting CSS and HTML</button>
+      <div class="content">
+        <ul>
+          <li>Why?</li>
+          <li>How?</li>
+        </ul>
+      </div>
     </div>
   </section>
 
